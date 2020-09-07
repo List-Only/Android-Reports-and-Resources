@@ -4,7 +4,53 @@
 
 --------
 
+### Hardcoded credentials
+
+#### Disclosure of all uploads via hardcoded api secret
+
+[https://hackerone.com/reports/351555](https://hackerone.com/reports/351555)
+
+--------
+
+### Insecure deeplinks
+
+#### Sensitive information disclosure
+
+[https://hackerone.com/reports/401793](https://hackerone.com/reports/401793)
+
+### RCE
+
+#### RCE in TinyCards for Android
+
+[https://hackerone.com/reports/281605](https://hackerone.com/reports/281605) - TinyCards made this report private.
+
+#### CVE-2020-8913: Persistent arbitrary code execution in Google Play Core library
+
+[https://blog.oversecured.com/Oversecured-automatically-discovers-persistent-code-execution-in-the-Google-Play-Core-Library/](https://blog.oversecured.com/Oversecured-automatically-discovers-persistent-code-execution-in-the-Google-Play-Core-Library/) - Persistent arbitrary code execution in Android's Google Play Core Library: details, explanation and the PoC - CVE-2020-8913
+
+--------
+
+### SQL Injection
+
+#### SQL Injection in Content Provider
+
+[https://hackerone.com/reports/291764](https://hackerone.com/reports/291764)
+
+--------
+
+### Session theft
+
+#### Steal user session
+
+[https://hackerone.com/reports/328486](https://hackerone.com/reports/328486)
+
+--------
+
 ### Steal files
+
+#### Vulnerable to local file steal, Javascript injection, Open redirect
+
+[https://hackerone.com/reports/499348](https://hackerone.com/reports/499348)
 
 #### Token leakage due to stolen files via unprotected Activity
 
@@ -30,6 +76,10 @@
 
 ### Bypasses
 
+#### Golden techniques to bypass host validations
+
+[https://hackerone.com/reports/431002](https://hackerone.com/reports/431002)
+
 #### Two-factor authentication bypass due to vuln endpoint
 
 [https://hackerone.com/reports/202425](https://hackerone.com/reports/202425)
@@ -38,11 +88,27 @@
 
 [https://hackerone.com/reports/205000](https://hackerone.com/reports/205000)
 
+#### Bypass PIN/Fingerprint lock
+
+[https://hackerone.com/reports/331489](https://hackerone.com/reports/331489)
+
+#### Bypass lock protection
+
+[https://hackerone.com/reports/490946](https://hackerone.com/reports/490946)
+
+#### Bypass of biometrics security functionality
+
+[https://hackerone.com/reports/637194](https://hackerone.com/reports/637194)
+
 --------
 
-### XSS 
+### XSS
 
-#### XSS via SAMLAuthActivity (Also Webview could have been implimented insecurely).
+#### HTML Injection in BatterySaveArticleRenderer WebView
+
+[https://hackerone.com/reports/176065](https://hackerone.com/reports/176065)
+
+#### XSS via SAMLAuthActivity
 
 [https://hackerone.com/reports/283058](https://hackerone.com/reports/283058)
 
@@ -54,9 +120,21 @@
 
 [https://hackerone.com/reports/189793](https://hackerone.com/reports/189793)
 
+#### XSS on Owncloud webview
+
+[https://hackerone.com/reports/87835](https://hackerone.com/reports/87835)
+
 --------
 
-### Privilage Esculation
+### Privilege Escalation
+
+#### Intent Spoofing
+
+[https://hackerone.com/reports/97295](https://hackerone.com/reports/97295)
+
+#### Access of some not exported content providers
+
+[https://hackerone.com/reports/272044](https://hackerone.com/reports/272044)
 
 #### Access protected components via intent
 
@@ -72,6 +150,22 @@
 
 --------
 
+### CSRF
+
+#### Deeplink leads to CSRF in follow action
+
+[https://hackerone.com/reports/583987](https://hackerone.com/reports/583987)
+
+---
+
+### Case sensitive account collisions
+
+#### overwrite account associated with email via android application
+
+[https://hackerone.com/reports/187714](https://hackerone.com/reports/187714)
+
+---
+
 ### Intercept Broadcasts
 
 #### Possible to intercept broadcasts about file uploads
@@ -82,9 +176,19 @@
 
 [https://hackerone.com/reports/289000](https://hackerone.com/reports/289000)
 
+#### View every network request response's information
+[https://hackerone.com/reports/56002](https://hackerone.com/reports/56002)
+
 --------
 
 ## Practice Apps
+
+#### Oversecured Vulnerable Android App
+[A vulnerable app showing modern security bugs in Android apps](https://github.com/oversecured/ovaa)
+
+#### InjuredAndroid
+
+[A vulnerable Android application with ctf examples based on bug bounty findings, exploitation concepts, and pure creativity.](https://github.com/B3nac/InjuredAndroid)
 
 #### Android-InsecureBankv2
 
@@ -96,6 +200,9 @@
 
 #### OWASP-GoatDroid-Project
 [OWASP GoatDroid is a fully functional and self-contained training environment for educating developers and testers on Android security](https://github.com/jackMannino/OWASP-GoatDroid-Project)
+
+#### Sieve mwrlabs
+[Sieve is a small Password Manager app created to showcase some of the common vulnerabilities found in Android applications.](https://github.com/mwrlabs/drozer/releases/download/2.3.4/sieve.apk)
 
 ## Resources
 
@@ -113,6 +220,14 @@
 
 [Android Webview Vulnerabilities](https://pentestlab.blog/2017/02/12/android-webview-vulnerabilities/)
 
-[Android reverse engineering recon](https://b3nac.github.io/android/recon/2017/11/10/Setup-and-tips-for-Android-APK-recon.html)
+[Android reverse engineering recon](https://b3nac.com/posts/2017-11-10-Setup-and-tips-for-Android-APK-recon.html)
 
 [Webview addjavascriptinterface RCE](https://labs.mwrinfosecurity.com/blog/webview-addjavascriptinterface-remote-code-execution/)
+
+[Install PLayStore On Android Emulator](https://medium.com/@dai_shi/installing-google-play-services-on-an-android-studio-emulator-fffceb2c28a1)
+
+[Android Bug Bounty Tips](https://medium.com/bugbountyhunting/bug-bounty-hunting-tips-2-target-their-mobile-apps-android-edition-f88a9f383fcc)
+
+[Android: Access to app protected components](https://blog.oversecured.com/Android-Access-to-app-protected-components/)
+
+[Android: arbitrary code execution via third-party package contexts](https://blog.oversecured.com/Android-arbitrary-code-execution-via-third-party-package-contexts/)
